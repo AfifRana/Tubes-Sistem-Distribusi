@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Concert Ticketing Sistem</title>
+        <link th:href="@{/style.css}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div id="header">
+                <h1> Concert Ticketing Sistem </h1>
+            </div>
+            <nav>
+            <ul>
+                <li><a href="#">Daftar Konser</a></li>
+            </ul>
+            </nav>
+            <form id="search" action="#" method="get">
+                <p>
+                    <label for="id_produk">Nama : </label> 
+                    <input type="text" name="nama_produk" id="nama_produk" placeholder="masih tahap maintain... " >
+                    <input type="submit" name="submit" value="Search">
+                </p>
+            </form>
+            <h2>Form Pendaftaran</h2>
+            <form id="" action="#" th:action="@{/spring-java/add}" th:object="${pembeli}" method="POST">
+                <table align = "center" cellpadding = "10">              
+                <tr>
+                    <td><label for="">Nama : </label></td>
+                    <td> <input type="text" name="nama_pembeli" id="nama_pembeli" 
+                    placeholder="Nama Panjang" th:field="*{namaPembeli}"> </td>
+                </tr>
+                <tr>
+                    <td> <label for="">Konser : </label> </td>
+                    <td>
+                        <select id="konser_terpilih" name="konser_terpilih" th:field="*{idKonser}">
+                            <option value="1"> Selalu Happy - Band </option>
+                            <option value="2"> Muhammad Randi Noor - Solo </option>
+                            <option value="3"> Musix - DJ </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="">Kelas : </label> </td>
+                    <td>
+                        <select id="kelas_terpilih" name="kelas_terpilih" th:field="*{idKelas}">
+                            <option value="1"> Reguler </option>
+                            <option value="2"> VIP </option>
+                            <option value="3"> VVIP </option>
+                        </select>
+                    </td>
+                </tr>
+                </table>
+                <input type="submit" name="submit" value="Daftar"> 
+                <input type="reset" name="reset" value="Reset">
+            </form>
+        </div>
+    </body>
+</html>

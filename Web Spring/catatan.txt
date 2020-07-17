@@ -1,0 +1,4 @@
+Sudah bisa jalan, cuma data belum bisa masuk ke database
+
+Analisis terakhir :
+1. Karena nama kolom dan tabel di database beda sama nama variabel dan nama class-nya
