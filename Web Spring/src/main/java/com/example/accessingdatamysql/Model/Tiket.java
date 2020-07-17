@@ -1,36 +1,26 @@
 package com.example.accessingdatamysql.Model;
 
-
 import javax.persistence.Entity;
-//import javax.persistence.Id;
 import javax.persistence.Column;
+import javax.persistence.EmbeddedId;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="tiket")
 public class Tiket {
 
-    @Column(name="id_konser")
-    private int idKonser;
-    @Column(name="id_kelas")
-    private int idKelas;
+    @EmbeddedId
+    private TiketIdentity tiketIdentity;
+    
     @Column(name="jumlah_tiket")
     private int jumlahTiket;
 
-    public int getIdKonser() {
-        return idKonser;
+    public TiketIdentity getTiketIdentity() {
+        return tiketIdentity;
     }
-
-    public void setIdKonser(final int idKonser) {
-        this.idKonser = idKonser;
-    }
-
-    public int getIdKelas() {
-        return idKelas;
-    }
-
-    public void setIdKelas(final int idKelas) {
-		this.idKelas = idKelas;
+    
+    public void setTiketIdentity(final TiketIdentity tiketIdentity) {
+        this.tiketIdentity = tiketIdentity;
     }
     
     public int getJumlahTiket() {

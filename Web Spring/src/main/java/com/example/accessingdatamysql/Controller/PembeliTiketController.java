@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class PembeliTiketController {
     @Autowired
     private PembeliTiketRepository pembeliTiketRepository;
+    @Autowired
+    private TiketController tiketController;
 
     @GetMapping(path="/add")
     public String showForm(Model model) {
@@ -29,8 +31,12 @@ public class PembeliTiketController {
         // pembeli.setNamaPembeli(name);
         // pembeli.setIdKonser(idKonser);
         // pembeli.setIdKelas(idKelas);
-        pembeliTiketRepository.save(pembeli);
-        return "Saved";
+        if (tiketController.checkJumlahTiket(pembeli.getIdKonser(), pembeli.getIdKelas()) > 0) {
+            pembeliTiketRepository.save(pembeli);
+            return "Saved";
+        } else {
+            return "Jumlah tiket kurang";
+        }
     }
 
 }

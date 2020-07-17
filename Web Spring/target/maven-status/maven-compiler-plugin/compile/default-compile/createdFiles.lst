@@ -1,4 +1,8 @@
 com\example\accessingdatamysql\Controller\PembeliTiketController.class
+com\example\accessingdatamysql\Model\Tiket.class
 com\example\accessingdatamysql\Controller\PembeliTiketRepository.class
+com\example\accessingdatamysql\Controller\TiketController.class
 com\example\accessingdatamysql\Model\PembeliTiket.class
+com\example\accessingdatamysql\Controller\TiketRepository.class
 com\example\accessingdatamysql\ConcertTicketingApplication.class
+com\example\accessingdatamysql\Model\TiketIdentity.class
