@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 06, 2020 at 12:14 PM
+-- Generation Time: Jul 17, 2020 at 07:36 PM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -138,15 +138,15 @@ CREATE TABLE `tiket` (
 --
 
 INSERT INTO `tiket` (`id_konser`, `id_kelas`, `jumlah_tiket`) VALUES
-(1, 1, 100),
-(2, 1, 100),
-(3, 1, 100),
-(1, 2, 100),
-(2, 2, 100),
-(3, 2, 100),
-(1, 3, 100),
-(2, 3, 100),
-(3, 3, 100);
+(1, 1, 1),
+(2, 1, 1),
+(3, 1, 1),
+(1, 2, 1),
+(2, 2, 1),
+(3, 2, 1),
+(1, 3, 1),
+(2, 3, 1),
+(3, 3, 1);
 
 --
 -- Indexes for dumped tables
