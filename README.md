@@ -13,11 +13,11 @@ Masih tahap percobaan. Biar mudah implemen java RMI nya
 Tujuannya untuk akses localhost dari laptop/komputer/smartphone lain ke localhost kita. Dan bisa juga untuk komunikasi antar server(localhost) untuk requesting API.
 1. Buka file xampp/apache/conf/httpd.conf.
 2. Cari "LoadModule vhost_alias_module modules/mod_vhost_alias.so", terus hapus tanda '#' didepannya.
-3. Cari "Include “conf/extra/httpd-vhosts.conf", hapus juga tanda '#' (kalau ada). Lau tekan save.
+3. Cari "Include “conf/extra/httpd-vhosts.conf", hapus juga tanda '#' (kalau ada). Lalu tekan save.
 4. Lanjut buka file xampp/apache/conf/extra/httpd-xampp.conf.
 5. Tambah "Allow from [IP Address]" sebelum kalimat "ErrorDocument 403 /error/XAMPP_FORBIDDEN.html.var". Tuliskan satu persatu IP yang ingin didaftarkan.
 6. Jika ingin semua bisa mengakses ubah "order deny, allow dan Deny from all” menjadi “Allow from all”. (akses hanya bisa dalam satu jaringan local, misal satu wifi). Lalu tekan save.
-7. Untuk bisa mengetahui IP Adress localhost (server) yang bisa diakses, buka cmd lalu ketik ipconfig.
+7. Untuk bisa mengetahui IP Adress localhost (server) yang bisa diakses, buka cmd lalu ketik 'ipconfig'.
 8. Cek dibagian Wireless LAN Adapter Wi-Fi, atau adapter lain sesuai akses komputer tersebut.
 9. Cek Default Gateway. Itulah IP yang dapat diakses.
 10. Selesai, selamat mencoba. Jangan lupa masukkan port dan path sesuai dengan konfigurasinya ya.
