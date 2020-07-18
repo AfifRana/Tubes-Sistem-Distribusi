@@ -23,4 +23,5 @@ Tujuannya untuk akses localhost dari laptop/komputer/smartphone lain ke localhos
 10. Selesai, selamat mencoba. Jangan lupa masukkan port dan path sesuai dengan konfigurasinya ya.
 
 ## Akses Web Spring Heroku
+Jika ingin mengakses langsung aplikasi web yang tersimpan di cloud :
 https://sister-demo.herokuapp.com/spring-java/add
