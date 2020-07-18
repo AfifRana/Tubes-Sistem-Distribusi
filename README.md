@@ -8,3 +8,6 @@ Masih tahap percobaan. Biar mudah implemen java RMI nya
 4. Isi formnya
 5. Kalo berhasil ada keterangan "Saved", kalo gagal ada keterangan "Jumlah tiket kurang", (POST method)
 6. Kalo mau coba lagi jangan direfresh, tapi di enter ulang aja URLnya. Soalnya, biar balik ke method GET lagi
+
+## Akses Web Spring Heroku
+sister-demo.herokuapp.com/spring-java/add
