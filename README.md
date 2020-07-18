@@ -10,4 +10,4 @@ Masih tahap percobaan. Biar mudah implemen java RMI nya
 6. Kalo mau coba lagi jangan direfresh, tapi di enter ulang aja URLnya. Soalnya, biar balik ke method GET lagi
 
 ## Akses Web Spring Heroku
-sister-demo.herokuapp.com/spring-java/add
+https://sister-demo.herokuapp.com/spring-java/add
